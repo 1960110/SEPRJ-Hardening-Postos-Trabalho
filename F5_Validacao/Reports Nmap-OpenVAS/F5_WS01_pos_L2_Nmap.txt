@@ -1,0 +1,23 @@
+# Nmap 7.98 scan initiated Wed Jun 17 22:39:48 2026 as: /usr/lib/nmap/nmap -Pn -sV -sC -p- --stats-every 30s -oN /mnt/ssd/ws01_pos_L2_nmap.txt 192.168.100.20
+Nmap scan report for 192.168.100.20
+Host is up (0.00056s latency).
+Not shown: 65531 filtered tcp ports (no-response)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+5040/tcp open  unknown
+MAC Address: 00:0C:29:A4:1E:70 (VMware)
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2026-06-17T21:42:17
+|_  start_date: N/A
+| smb2-security-mode: 
+|   3.1.1: 
+|_    Message signing enabled and required
+|_nbstat: NetBIOS name: LAB-WS01, NetBIOS user: <unknown>, NetBIOS MAC: 00:0c:29:a4:1e:70 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jun 17 22:42:57 2026 -- 1 IP address (1 host up) scanned in 189.37 seconds
